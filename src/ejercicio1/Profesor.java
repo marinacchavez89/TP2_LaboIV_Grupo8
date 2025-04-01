@@ -13,9 +13,9 @@ public class Profesor extends Empleado {
 		antiguedadDocente = 0 ;
 	}
 	
-	public Profesor(String cargo, int antiguedadDocente)
+	public Profesor(String nombre, int edad, String cargo, int antiguedadDocente)
 	{
-		super();
+		super(nombre, edad);
 		this.cargo = cargo;
 		this.antiguedadDocente = antiguedadDocente;
 	}
@@ -33,4 +33,11 @@ public class Profesor extends Empleado {
 	public void setAntiguedadDocente(int antiguedadDocente) {
 		this.antiguedadDocente = antiguedadDocente;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + ", CARGO: " + cargo + ", ANTIÜEDAD: " + antiguedadDocente;
+	}
+	
+	
 }
