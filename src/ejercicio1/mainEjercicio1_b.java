@@ -28,9 +28,16 @@ public class mainEjercicio1_b {
             //System.out.println(iterador.next());
         	Profesor profesor = iterador.next(); // Guardamos el objeto en una variable
             System.out.println(profesor.toString()); // Mostramos el objeto
-        
-        
+         
 	}
-
+     
+        Profesor profe1 = new Profesor("Emiliano", 40, "Profesor de Educacion Física", 5);  
+        Profesor profe2 = new Profesor("Emiliano", 40, "Profesor de Educacion Física", 5);
+        
+        if (profe1.equals(profe2)) {
+        	System.out.println("Es el mismo profesor.");       
+        	}  else {
+        		System.out.println("No es el mismo profesor.");  
+        	}
 }
 }

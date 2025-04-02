@@ -1,5 +1,7 @@
 package ejercicio1;
 
+import java.util.Objects;
+
 public class Profesor extends Empleado implements Comparable<Profesor> {
 	private String cargo;
 	private int antiguedadDocente;
@@ -54,7 +56,28 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 		return 1;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(antiguedadDocente, cargo);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Profesor other = (Profesor) obj;
+		return antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
+	}
+	
+	
+	}
+
 
 	
-	
-}
