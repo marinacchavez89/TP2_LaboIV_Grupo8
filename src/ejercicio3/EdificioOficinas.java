@@ -24,6 +24,6 @@ public class EdificioOficinas extends Edificio {
 	
 	@Override
 	public String toString() {
-		return super.toString() + " con " + numeroOficinas + " oficinas.";
+		return super.toString()+ " con " + numeroOficinas + " oficinas.";
 	}
 }
