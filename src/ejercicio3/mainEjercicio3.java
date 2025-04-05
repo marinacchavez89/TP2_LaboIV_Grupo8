@@ -40,11 +40,9 @@ public class mainEjercicio3 {
 		
 		Edificio ediOfi1 = new EdificioOficinas(1200, 17);
 		Edificio ediOfi2 = new EdificioOficinas(1000, 22);
-		Edificio ediOfi3 = new EdificioOficinas(999, 37);
 		
 		listaPoliYEdiOficinas.add(ediOfi1);
 		listaPoliYEdiOficinas.add(ediOfi2);
-		listaPoliYEdiOficinas.add(ediOfi3);
 		
 		ListIterator<Edificio> it = listaPoliYEdiOficinas.listIterator();
 		
