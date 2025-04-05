@@ -24,8 +24,6 @@ public class Prueba implements IIntalacionDeportiva {
 		return "Prueba Tipo de instalacion = " + tipoDeInstalacion;
 	}
 
-
-
 	@Override
 	public int getTipoDeInstalaion() {
 	

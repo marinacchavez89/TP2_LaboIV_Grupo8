@@ -34,8 +34,7 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 	}
 	public void setAntiguedadDocente(int antiguedadDocente) {
 		this.antiguedadDocente = antiguedadDocente;
-	}
-	
+	}	
 
 	
 	@Override
@@ -74,10 +73,9 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 			return false;
 		Profesor other = (Profesor) obj;
 		return antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
-	}
+	}	
 	
-	
-	}
+}
 
 
 	

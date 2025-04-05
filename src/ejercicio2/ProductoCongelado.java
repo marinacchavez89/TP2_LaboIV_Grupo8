@@ -18,8 +18,8 @@ public class ProductoCongelado extends Producto{
 
 	@Override
 	public String toString() {
-		return "Producto Congelado [temperaturaRecomendada=" + temperaturaRecomendada  
-				+ super.toString() + "]";
+		return "Producto Congelado, temperatura recomendada: " + temperaturaRecomendada  
+				+ super.toString();
 	}
 	
 }

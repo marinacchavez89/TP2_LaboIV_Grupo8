@@ -10,16 +10,13 @@ public class Polideportivo extends Edificio implements IIntalacionDeportiva {
 		this.nombre=nombre;
 		this.tipoDeInstalacion=tipoDeInstalacion;
 	}
-
 	
 	@Override
 	public int getTipoDeInstalaion() {
-		// TODO Auto-generated method stub
 		return tipoDeInstalacion;
 	}
 	@Override
 	public double getSuperficie() {
-		// TODO Auto-generated method stub
 		return super.getSuperficie();
 	}
 
@@ -31,10 +28,9 @@ public class Polideportivo extends Edificio implements IIntalacionDeportiva {
 		this.nombre = nombre;
 	}
 
-
 	@Override
 	public String toString() {
-		return "Polideportivo [nombre= " + nombre + ", tipoDeInstalacion= " + tipoDeInstalacion + ", superficie= "+getSuperficie()+"]";
+		return "Polideportivo, Nombre:  " + nombre + ", Tipo de Instalación: " + tipoDeInstalacion + ", Superficie: " + getSuperficie() + "m²";
 	}
 
 }
